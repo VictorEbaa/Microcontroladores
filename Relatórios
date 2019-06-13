@@ -1,0 +1,70 @@
+Relatório de microcomputadores
+
+Atividade 1
+
+Fazer um LED acender, para isso utilizamos o arduíno uno,uma protoboard, um LED, um resistor e cabos.
+
+Primeiro passo: Conectar um cabo no GND do arduino uno ao negativo da protoboard.
+Segundo passo: Pegar um LED, encaixar ele na protoboard, depois pegar um resistor e conectar ele ao negativo da protoboard e deixá-lo na reta do negativo da LED.
+Terceiro passo: Pegar um cabo conectar ao arduino em alguma porta (escolhi a 7) e executar o programa.
+
+Programa utilizado
+Void setup(){
+PinMode (7, OUTPUT);
+}
+Void loop(){
+digitalWrite(7, HIGH);
+Delay(1000);
+digitalWrite(7, LOW);
+Delay(1000);
+}
+
+      2.   Atividade 2
+
+Fazer um semáforo com LEDs, para isso utilizaremos um arduíno uno,uma protoboard, três LEDs, três resistores e cabos.
+
+Primeiro passo: Conectar um cabo no GND do arduino uno ao negativo da protoboard.
+Segundo passo: Pegar os três  LEDs, encaixar eles na protoboard, depois pegar os resistor e conectar eles ao negativo da protoboard e deixá-los na reta do negativo dos LEDs.
+Terceiro passo: Pegar um cabo conectar ao arduino em alguma porta (escolhi o 13, 12 e 11) e executar o programa.
+
+Programa utilizado
+Void setup (){
+PinMode (13, OUTPUT); //verde
+PinMode (12, OUTPUT); //amarelo
+PinMode (11, OUTPUT); // vermelho
+}
+Void loop(){
+digitalwrite(13, HIGH);
+Delay(2000);
+digitalwrite(13, LOW);
+Delay(1000);
+digitalwrite (12, HIGH);
+Delay(2000);
+digitalwrite (12, LOW);
+Delay(1000);
+digitalwrite (11, HIGH);
+Delay(2000);
+digitalwrite (11, LOW);
+Delay(1000);
+}
+      3.   Atividade 3
+
+A terceira atividade foi ativar o buzzer, para isso utilizamos o arduíno uno, a protoboard, o buzzer e cabos.
+
+Primeiro passo: Pegue o buzzer e conecte na protoboard, em seguida pegue um cabo e conecte ao GND e ao negativo do buzzer.
+Segundo passo: Pegar um cabo conectar ao arduino em alguma porta (escolhi a 5) e executar o programa.
+
+Programa utilizado
+Int buzzer = 12;
+
+Void setup (){
+PinMode (12, OUTPUT);
+}
+Void loop(){
+digitalwrite (12, HIGH);
+Delay (2000);
+digitalwrite (12, LOW);
+Delay (2000);
+}
+
+Acabou :p
